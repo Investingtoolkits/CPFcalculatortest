@@ -87,9 +87,3 @@ put_html(df_fixed.loc[df_fixed['Year'] == targetyear].to_html(border=0))
 
 #when i keep this print line here, the program still works, just that now it is displayed in this IDE console
 #print(df_fixed.loc[df_fixed['Year'] == targetyear])
-
-import os
-port = int(os.environ.get('PORT', 33507))  # add these lines in code
-app.run(host=args.host, port=port, debug=True)
-
-heroku config:add PORT=33507   # run this command once you upadte the code in terminal
