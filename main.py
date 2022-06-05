@@ -88,4 +88,4 @@ put_html(df_fixed.loc[df_fixed['Year'] == targetyear].to_html(border=0))
 #when i keep this print line here, the program still works, just that now it is displayed in this IDE console
 #print(df_fixed.loc[df_fixed['Year'] == targetyear])
 
-if __name__ == '__main__':
+var port = process.env.PORT || 5000;
