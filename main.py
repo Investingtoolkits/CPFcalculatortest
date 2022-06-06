@@ -89,3 +89,6 @@ put_html(df_fixed.loc[df_fixed['Year'] == targetyear].to_html(border=0))
 #print(df_fixed.loc[df_fixed['Year'] == targetyear])
 
 #var port = process.env.PORT || 5000;
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
