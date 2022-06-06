@@ -6,6 +6,7 @@
 from pywebio.input import *
 from pywebio.output import *
 import pandas as pd
+import os
 
 age = input("How old are you?", type=NUMBER)
 put_text('Age = %r' % age)
@@ -92,3 +93,6 @@ put_html(df_fixed.loc[df_fixed['Year'] == targetyear].to_html(border=0))
 app.listen(process.env.PORT || 3000, function(){
   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
+if _ _name_ _=="_ _main_ _":
+            port= int(os.environ.get("PORT", 5000))
+            app.run(host="0.0.0.0",port =port)
