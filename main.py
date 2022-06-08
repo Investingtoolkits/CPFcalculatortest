@@ -8,7 +8,6 @@ from pywebio.output import *
 import pandas as pd
 import os
 
-def main():
 age = input("How old are you?", type=NUMBER)
 put_text('Age = %r' % age)
 
