@@ -91,4 +91,6 @@ def app():
     #print(df_fixed.loc[df_fixed['Year'] == targetyear])
 
 if __name__ == '__main__':
-    start_server(app, port=36535, debug=True)
+    start_server(app, debug=True)
+
+    #port=36535
